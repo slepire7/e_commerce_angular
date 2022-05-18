@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col">
+        <app-filters (frmResulte)="Callback($event)"></app-filters>
+    </div>
+    <div class="col-md-10">
+        <app-product-list [filters]="dataFilter"></app-product-list>
+    </div>
+
+</div>

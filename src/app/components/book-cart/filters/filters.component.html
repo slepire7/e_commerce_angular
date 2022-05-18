@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-header">Filtros</div>
+
+    <div class="card-body">
+        <form (submit)="submitForm($event)" [formGroup]="frmFilter">
+            <div class="form-group">
+                <label for="de">De</label>
+                <input type="number" id="de" [formControlName]="'minimo'" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="ate">Até</label>
+                <input type="number" [formControlName]="'maximo'" id="ate" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-sm">Filtrar</button>
+        </form>
+    </div>
+</div>
